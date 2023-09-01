@@ -1,5 +1,5 @@
 #!/bin/bash
-gcloud dataproc jobs submit pyspark --cluster=cluster-iz-dplr --region=us-central1 /home/ashfaqalamlearning/.git/spark/Usecase4_GcpGcsReadWritehive_cloud.py
+gcloud dataproc jobs submit pyspark --cluster=cluster-iz-dplr --region=us-east1 /home/ashfaqalamlearning/.git/spark/Usecase4_GcpGcsReadWritehive_cloud.py
 if [ $? -ne 0 ]
 then
 echo "`date` error occured in the Pyspark job" &> /tmp/gcp_pyspark_schedule.log
